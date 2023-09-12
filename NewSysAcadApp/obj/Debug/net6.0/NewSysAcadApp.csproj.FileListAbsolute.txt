@@ -1,0 +1,14 @@
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\bin\Debug\net6.0\NewSysAcadApp.exe
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\bin\Debug\net6.0\NewSysAcadApp.deps.json
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\bin\Debug\net6.0\NewSysAcadApp.runtimeconfig.json
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\bin\Debug\net6.0\NewSysAcadApp.dll
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\bin\Debug\net6.0\NewSysAcadApp.pdb
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.AssemblyInfoInputs.cache
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.AssemblyInfo.cs
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.csproj.CoreCompileInputs.cache
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.dll
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\refint\NewSysAcadApp.dll
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.pdb
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\NewSysAcadApp.genruntimeconfig.cache
+C:\Users\admin\mdangelo_root\personal\4_utn\labo2\NewSysAcad\NewSysAcadApp\obj\Debug\net6.0\ref\NewSysAcadApp.dll
