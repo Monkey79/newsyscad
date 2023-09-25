@@ -1,4 +1,4 @@
-﻿namespace NewSysAcadApp
+﻿namespace NewSysAcadApp.src.main
 {
     internal class Program
     {
