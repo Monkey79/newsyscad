@@ -1,5 +1,6 @@
 ﻿using NewSysAcadApp.src.main.sysacad.entities;
 using NewSysAcadApp.src.main.sysacad.repository;
+using NewSysAcadApp.src.main.sysacad.repository.impl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,14 @@ namespace NewSysAcadApp.src.main.sysacad.service.impl
     {
         private LoginRepository loginRepository;
 
-        public LoginServiceImpl() { 
-        
+        public LoginServiceImpl() {
+            loginRepository = new LoginRepositoryImpl();
         }
 
         public User checkCredential(string username, string password) {
+            Console.WriteLine("*******CheckCredential**********");
             User user = null;
-            user = loginRepository.getUserByUsername(username);
+            loginRepository.GetAll();
             return user;
         }
     }

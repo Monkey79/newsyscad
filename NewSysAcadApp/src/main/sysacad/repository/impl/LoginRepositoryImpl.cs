@@ -1,6 +1,5 @@
-﻿using NewSysAcadApp.src.main.sysacad.entities;
-using NewSysAcadUtils.db;
-using NewSysAcadUtils.db.impl;
+﻿using MySql.Data.MySqlClient;
+using NewSysAcadApp.src.main.sysacad.entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,21 +8,60 @@ using System.Threading.Tasks;
 
 namespace NewSysAcadApp.src.main.sysacad.repository.impl
 {
-    public class LoginRepositoryImpl : LoginRepository
+    public class LoginRepositoryImpl : BaseRepo,LoginRepository
     {
-        private const string GET_USER_BY_NAME = "SELECT * from USER WHERE name=?";
-
-        private NewAcadDBConnection _dBConnection;
-
-        public LoginRepositoryImpl(){
-            _dBConnection = new NewAcadDBConnetionImpl();
+        private const string GET_USER_BY_NAME = "SELECT * from users WHERE name=?";
+        private const string GET_ALL = "SELECT * FROM users";
+                   
+        public LoginRepositoryImpl() {
+            Console.WriteLine("***LoginRepositoryImpl****");
+            _mySqlConn = new MySqlConnection(CONNN_URL);
         }
 
-        public User getUserByUsername(string username) {
+        public User DeleteById(int id) {
             throw new NotImplementedException();
         }
 
-        public User saveUser(string username, string password){
+        public List<User> GetAll() {
+            Console.WriteLine("********GET ALL******************");
+            try{
+                _mySqlConn.Open();
+                Console.WriteLine("***OPEN****");
+                _mySqlComnd = new MySqlCommand(GET_ALL, _mySqlConn);
+                Console.WriteLine("**_mySqlComnd***"+ _mySqlComnd);
+                _mySqlRead = _mySqlComnd.ExecuteReader();
+
+                while (_mySqlRead.Read()){
+                    Console.WriteLine("->id->" + _mySqlRead.GetInt32("id"));
+                    Console.WriteLine("->name->" + _mySqlRead.GetString("name"));
+                    Console.WriteLine("->pass->" + _mySqlRead.GetString("password"));
+                    Console.WriteLine("->role->" + _mySqlRead.GetString("role"));
+                }
+                _mySqlRead.Close();
+            }catch (Exception ex){
+                Console.WriteLine("ERROR--->"+ex.Message);
+                Console.WriteLine("ERROR--->" + ex.GetType);
+                Console.WriteLine("ERROR--->" + ex);
+            }
+            finally { 
+                _mySqlConn.Close();
+            }
+            return null;
+        }
+
+        public User GetById(int id){
+            throw new NotImplementedException();
+        }
+
+        public User GetUserByUsername(string username) {
+            throw new NotImplementedException();
+        }
+
+        public User Save(User entity) {
+            throw new NotImplementedException();
+        }
+
+        public User SaveUser(string username, string password) {
             throw new NotImplementedException();
         }
     }

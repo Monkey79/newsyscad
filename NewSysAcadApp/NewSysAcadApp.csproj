@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewSysAcadCore\NewSysAcadCore.csproj" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\assets\mysql-connector-net-8.1.0-noinstall\v4.6.2\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
   </ItemGroup>
 
 </Project>
